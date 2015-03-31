@@ -12,7 +12,7 @@
     },
     "dependencies": {
         "react": "0.13.0",
-        "react-selector": "jvalente/react-selector"
+        "react-selector": "latest"
     },
     "scripts": {
         "coffee": "./node_modules/coffee-script/bin/coffee -o lib/ -c src/app.coffee",
