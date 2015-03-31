@@ -8,15 +8,16 @@
     "devDependencies": {
         "coffee-script": "^1.9.1",
         "browserify": "^9.0.3",
-        "uglify-js": "^2.4.16",
+        "uglify-js": "^2.4.16"
     },
     "dependencies": {
         "react": "0.13.0",
         "react-selector": "jvalente/react-selector"
     },
     "scripts": {
-        "coffee": "./node_modules/coffee-script/bin/coffee -c app.coffee",
-        "browserify": "browserify app.js -o bundle.js",
-        "build": "npm run coffee & npm run browserify"
+        "coffee": "./node_modules/coffee-script/bin/coffee -o lib/ -c src/app.coffee",
+        "browserify": "browserify lib/app.js -o lib/bundle.js",
+        "uglify": "uglifyjs lib/bundle.js -cm -o lib/bundle.min.js",
+        "build": "npm run coffee & npm run browserify & npm run uglify"
     }
 }
