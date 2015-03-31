@@ -1,0 +1,21 @@
+{
+    "name": "react-selector-demo",
+    "author": "João Valente",
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/jvalente/react-selector-demo.git"
+    },
+    "devDependencies": {
+        "coffee-script": "^1.9.1",
+        "browserify": "^9.0.3"
+    },
+    "dependencies": {
+        "react": "0.13.0",
+        "react-selector": "jvalente/react-selector"
+    },
+    "scripts": {
+        "coffee": "./node_modules/coffee-script/bin/coffee -c app.coffee",
+        "browserify": "browserify app.js -o bundle.js",
+        "build": "npm run coffee & npm run browserify"
+    }
+}
