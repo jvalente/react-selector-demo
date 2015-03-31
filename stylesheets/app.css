@@ -4,6 +4,11 @@ body {
     font-size: 1rem;
     color: #202022;
     background-color: #E7E1C1;
+    line-height: 1.5;
+}
+
+h3 a {
+    text-decoration: underline;
 }
 
 a,a:visited {
